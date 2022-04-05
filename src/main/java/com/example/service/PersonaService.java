@@ -22,8 +22,7 @@ public class PersonaService implements IPersonaService {
 
 	@Override
 	public Optional<Persona> listarId(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return iPersona.findById(id);
 	}
 
 	@Override
@@ -38,8 +37,6 @@ public class PersonaService implements IPersonaService {
 
 	@Override
 	public void delete(int id) {
-		// TODO Auto-generated method stub
-
+		iPersona.deleteById(id);
 	}
-
 }
